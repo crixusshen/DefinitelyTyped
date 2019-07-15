@@ -7,7 +7,7 @@ export function validate(selector: string, options: {
   onKeyup?: boolean,
   firstInvalidFocus?: boolean,
   conditional?: {
-    [key: string]: (_) => void
+    [key: string]: () => void
   },
   descriptions?: {
     [key: string]: {
@@ -33,7 +33,7 @@ export function validateExtend(validateRule: {
       pattern?: string
     },
     conditional?: {
-      [key: string]: (_) => void
+      [key: string]: () => void
     }
   }
 });

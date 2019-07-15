@@ -5,7 +5,7 @@
  * @param onClick In Alert modal, a callback function is executed when the user clicks the "Ok" button
  * @param allowClose If yes, the close button appears in the upper right corner
  */
-export default function alert(text: string, title?: string, onClick?: (_) => void, allowClose?: boolean): void;
+export default function alert(text: string, title?: string, onClick?: () => void, allowClose?: boolean): void;
 
 /**
  * Open an alert box
@@ -13,7 +13,7 @@ export default function alert(text: string, title?: string, onClick?: (_) => voi
  * @param onClick In Alert modal, a callback function is executed when the user clicks the "Ok" button
  * @param allowClose If yes, the close button appears in the upper right corner
  */
-export default function alert(text: string, onClick?: (_) => void, allowClose?: boolean): void;
+export default function alert(text: string, onClick?: () => void, allowClose?: boolean): void;
 
 /**
  * Open an alert box
@@ -29,6 +29,6 @@ export default function alert(text: string, allowClose?: boolean): void;
 export default function alert(options: {
   text: string;
   title?: string;
-  onClick?: (_) => void;
+  onClick?: () => void;
   allowClose?: boolean;
 }): void;

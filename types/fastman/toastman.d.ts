@@ -2,14 +2,14 @@
  * Open a toast pop-up
  * @param text toast content
  * @param duration Toast displays the time, 2000 milliseconds by default
- * @param extraclass The toast root node is attached with a class and highly customized attribute, which allows users to control the styles of different scenarios. If the third parameter is used, add the corresponding style of extraclass in the business CSS
+ * @param extraclass The toast root node is attached with a class and highly customized attribute
  */
 export function toast(text: string, duration?: number, extraclass?: string): ZeptoCollection;
 
 /**
  * Open a toast pop-up
  * @param text toast content
- * @param extraclass The toast root node is attached with a class and highly customized attribute, which allows users to control the styles of different scenarios. If the third parameter is used, add the corresponding style of extraclass in the business CSS
+ * @param extraclass The toast root node is attached with a class and highly customized attribute
  */
 export function toast(text: string, extraclass?: string): ZeptoCollection;
 

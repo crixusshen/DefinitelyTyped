@@ -16,6 +16,6 @@ export function blankPage(options: {
 
 export namespace blankPage {
   interface blankPageReturnType {
-    on(eventName: string, callback: (_) => void);
+    on(eventName: string, callback: () => void);
   }
 }

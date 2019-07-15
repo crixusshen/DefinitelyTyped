@@ -11,7 +11,7 @@ export interface actionSheetItemType {
   bold?: boolean;
   close?: boolean;
   disabled?: boolean;
-  onClick?: (_) => void;
+  onClick?: () => void;
 }
 
 export interface actionSheetItemsType extends Array<actionSheetItemType> {}

@@ -2,23 +2,23 @@
 // Project: http://itest.dfzq.com.cn/document/fastman-v2/index.html
 // Definitions by: crixusshen <https://github.com/crixusshen>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-import alert from 'fastman/alertman';
-import actionSheet from 'fastman/actionsheetman';
-import { blankPage } from 'fastman/blankpageman';
-import cascadePicker from 'fastman/cascadepickerman';
-import confirm from 'fastman/confirmman';
-import datetimepicker from 'fastman/datetimepickerman';
-import { upload } from 'fastman/fileuploadman';
-import { validate, validateExtend } from 'fastman/formvalidateman';
-import { showLoading, hideLoading } from 'fastman/loadingman';
-import { defaults, openModal, closeModal } from 'fastman/modalman';
-import passGuard from 'fastman/passguardman';
-import picker from 'fastman/pickerman';
-import { initInfiniteScroll, infiniteRefresh, infiniteScrollDone } from 'fastman/scrollman-infiniteRefresh';
-import { initScroller, refreshScroller, scrollTop } from 'fastman/scrollman';
-import { tabEvent, tabSwitch } from 'fastman/tabman';
-import { tip, closeTip } from 'fastman/tipman';
-import { toast, closeToast } from 'fastman/toastman';
+import alert from './alertman';
+import actionSheet from './actionsheetman';
+import { blankPage } from './blankpageman';
+import cascadePicker from './cascadepickerman';
+import confirm from './confirmman';
+import datetimepicker from './datetimepickerman';
+import { upload } from './fileuploadman';
+import { validate, validateExtend } from './formvalidateman';
+import { showLoading, hideLoading } from './loadingman';
+import { defaults, openModal, closeModal } from './modalman';
+import passGuard from './passguardman';
+import picker from './pickerman';
+import { initInfiniteScroll, infiniteRefresh, infiniteScrollDone } from './scrollman-infiniteRefresh';
+import { initScroller, refreshScroller, scrollTop } from './scrollman';
+import { tabEvent, tabSwitch } from './tabman';
+import { tip, closeTip } from './tipman';
+import { toast, closeToast } from './toastman';
 
 export {
     alert,
@@ -47,4 +47,4 @@ export {
     closeTip,
     toast,
     closeToast
-}
+};

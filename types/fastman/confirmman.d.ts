@@ -7,7 +7,7 @@
  * @param okText Bottom right "Ok" button copy
  * @param cancelText Copy button "Cancel" at the bottom left
  */
-export default function confirm(text: string, title?: string, onOkClick?: (_) => void, onCancelClick?: (_) => void, okText?: string, cancelText?: string): void;
+export default function confirm(text: string, title?: string, onOkClick?: () => void, onCancelClick?: () => void, okText?: string, cancelText?: string): void;
 
 /**
  * Open a confirm box
@@ -17,7 +17,7 @@ export default function confirm(text: string, title?: string, onOkClick?: (_) =>
  * @param okText Bottom right "Ok" button copy
  * @param cancelText Copy button "Cancel" at the bottom left
  */
-export default function confirm(text: string, onOkClick?: (_) => void, onCancelClick?: (_) => void, okText?: string, cancelText?: string): void;
+export default function confirm(text: string, onOkClick?: () => void, onCancelClick?: () => void, okText?: string, cancelText?: string): void;
 
 /**
  * Open a confirm box
@@ -26,8 +26,8 @@ export default function confirm(text: string, onOkClick?: (_) => void, onCancelC
 export default function confirm(options: {
   text: string;
   title?: string;
-  onOkClick?: (_) => void;
-  onCancelClick?: (_) => void;
+  onOkClick?: () => void;
+  onCancelClick?: () => void;
   okText?: string;
   cancelText?: string;
 }): void;

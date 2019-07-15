@@ -19,8 +19,8 @@ import { toast, closeToast } from 'fastman/toastman';
 // for alertman test
 () => alert('I am content !');
 alert('I am content !', 'Hi~ FastMan');
-() => alert('I am content !', _ => alert('callback success !'));
-alert('I am content !', 'Hi~ SlowMan', _ => alert('callback success too !'));
+() => alert('I am content !', () => alert('callback success !'));
+alert('I am content !', 'Hi~ SlowMan', () => alert('callback success too !'));
 
 // for actionsheetman test
 const buttons1 = [
@@ -70,7 +70,7 @@ actionSheet([buttons1, buttons2]);
         buttonText: '点我试试',
         fontScale: 0.7,
     });
-    instance.on('blankPage:action', function(e) {
+    instance.on('blankPage:action', function() {
         alert('注册事件被点击！');
     });
     const instance2 = blankPage({
@@ -82,7 +82,7 @@ actionSheet([buttons1, buttons2]);
         fontScale: 1.2,
         iconScale: 1.2,
     });
-    instance2.on('blankPage:action', function(e) {
+    instance2.on('blankPage:action', function() {
         alert('另一个注册事件被点击！');
     });
     blankPage({
@@ -271,10 +271,10 @@ actionSheet([buttons1, buttons2]);
 };
 
 // for confirmman test
-() => confirm('I am content !', _ => alert('you clicked ok !'));
-() => confirm('I am content !', _ => alert('you clicked ok !'), _ => alert('you clicked cancel !'));
-() => confirm('I am content !', 'I am title !', _ => alert('you clicked ok !'));
-() => confirm('I am content !', 'I am title !', _ => alert('you clicked ok !'), _ => alert('you clicked cancel !'));
+() => confirm('I am content !', () => alert('you clicked ok !'));
+() => confirm('I am content !', () => alert('you clicked ok !'), () => alert('you clicked cancel !'));
+() => confirm('I am content !', 'I am title !', () => alert('you clicked ok !'));
+() => confirm('I am content !', 'I am title !', () => alert('you clicked ok !'), () => alert('you clicked cancel !'));
 
 // for datetimepickerman test
 () => {
@@ -305,7 +305,7 @@ upload(file, {
     });
     validate('#testForm', {
         conditional: {
-            confirmpwd: _ => {}
+            confirmpwd: () => {}
         },
         descriptions: {
             username: {
@@ -357,7 +357,7 @@ passGuard({
     mixPromise: function() {
         return Promise.resolve([]);
     },
-    onPressed: _ => {}
+    onPressed: () => {}
 });
 
 // for pickerman test
@@ -435,7 +435,7 @@ refreshScroller();
 scrollTop('#fileUploadScroller', 0);
 
 // for tabman test
-tabEvent('tab2', _ => alert('您点击了第二个选项卡 !'));
+tabEvent('tab2', () => alert('您点击了第二个选项卡 !'));
 tabSwitch('tab3');
 
 // for tipman test

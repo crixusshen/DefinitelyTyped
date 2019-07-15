@@ -8,12 +8,12 @@ declare function passGuard(options: {
   id?: string,
   keyboardType?: number,
   inputMaxLength?: number,
-  mixPromise?: (_) => Promise<any>,
-  onShow?: (_) => void,
-  onHide?: (_) => void,
-  onPressing?: (_) => void,
-  onPressed?: (_) => void,
-  onFocus?: (_) => void,
+  mixPromise?: () => Promise<any>,
+  onShow?: () => void,
+  onHide?: () => void,
+  onPressing?: () => void,
+  onPressed?: () => void,
+  onFocus?: () => void,
   onSubmit?: (input) => void
 }): passGuard.passGuardReturnType;
 
