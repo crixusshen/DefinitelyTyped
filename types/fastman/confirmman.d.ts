@@ -1,27 +1,27 @@
 /**
- * 表达式方式打开一个confirm确认框
- * @param text Confirm 文本
- * @param title Confirm modal 标题
- * @param onOkClick 在 Confirm modal下，当用户点击右下方“Ok”按钮时，回调函数将被执行
- * @param onCancelClick 在 Confirm modal下，当用户点击左下方“Cancel”按钮时，回调函数将被执行
- * @param okText 右下方“Ok”按钮文案
- * @param cancelText 左下方“Cancel”按钮文案
+ * Open a confirm box
+ * @param text Confirm text
+ * @param title Confirm modal title
+ * @param onOkClick In Confirm modal, the callback function is executed when the user clicks the "Ok" button at the bottom right
+ * @param onCancelClick In Confirm modal, the callback function is executed when the user clicks the "Cancel" button at the bottom left
+ * @param okText Bottom right "Ok" button copy
+ * @param cancelText Copy button "Cancel" at the bottom left
  */
 export default function confirm(text: string, title?: string, onOkClick?: (_) => void, onCancelClick?: (_) => void, okText?: string, cancelText?: string): void;
 
 /**
- * 表达式方式打开一个confirm确认框
- * @param text Confirm 文本
- * @param onOkClick 在 Confirm modal下，当用户点击右下方“Ok”按钮时，回调函数将被执行
- * @param onCancelClick 在 Confirm modal下，当用户点击左下方“Cancel”按钮时，回调函数将被执行
- * @param okText 右下方“Ok”按钮文案
- * @param cancelText 左下方“Cancel”按钮文案
+ * Open a confirm box
+ * @param text Confirm text
+ * @param onOkClick In Confirm modal, the callback function is executed when the user clicks the "Ok" button at the bottom right
+ * @param onCancelClick In Confirm modal, the callback function is executed when the user clicks the "Cancel" button at the bottom left
+ * @param okText Bottom right "Ok" button copy
+ * @param cancelText Copy button "Cancel" at the bottom left
  */
 export default function confirm(text: string, onOkClick?: (_) => void, onCancelClick?: (_) => void, okText?: string, cancelText?: string): void;
 
 /**
- * 声明式方式打开一个confirm确认框
- * @param options 具体options参数请查看http://itest.dfzq.com.cn/document/fastman-v2/component/confirm.html
+ * Open a confirm box
+ * @param options See options parameters for details:http://itest.dfzq.com.cn/document/fastman-v2/component/confirm.html
  */
 export default function confirm(options: {
   text: string;

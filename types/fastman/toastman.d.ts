@@ -1,21 +1,21 @@
 /**
- * 表达式方式打开一个toast弹出式提示
- * @param text toast内容
- * @param duration toast显示时间,默认2000毫秒
- * @param extraclass 给toast根节点附加class，高度自定义属性，方便用户自行控制不同场景的样式。如果使用了第三个参数，请自行在业务css里添加extraclass对应的样式。
+ * Open a toast pop-up
+ * @param text toast content
+ * @param duration Toast displays the time, 2000 milliseconds by default
+ * @param extraclass The toast root node is attached with a class and highly customized attribute, which allows users to control the styles of different scenarios. If the third parameter is used, add the corresponding style of extraclass in the business CSS
  */
 export function toast(text: string, duration?: number, extraclass?: string): ZeptoCollection;
 
 /**
- * 表达式方式打开一个toast弹出式提示
- * @param text toast内容
- * @param extraclass 给toast根节点附加class，高度自定义属性，方便用户自行控制不同场景的样式。如果使用了第三个参数，请自行在业务css里添加extraclass对应的样式。
+ * Open a toast pop-up
+ * @param text toast content
+ * @param extraclass The toast root node is attached with a class and highly customized attribute, which allows users to control the styles of different scenarios. If the third parameter is used, add the corresponding style of extraclass in the business CSS
  */
 export function toast(text: string, extraclass?: string): ZeptoCollection;
 
 /**
- * 声明式方式关闭一个toast弹出式提示
- * @param options 具体options参数请查看http://itest.dfzq.com.cn/document/fastman-v2/component/toast.html
+ * Open a toast pop-up
+ * @param options See options parameters for details:http://itest.dfzq.com.cn/document/fastman-v2/component/toast.html
  */
 export function toast(options: {
     text: string,
@@ -24,7 +24,7 @@ export function toast(options: {
   }): ZeptoCollection;
 
 /**
- * 表达式方式关闭一个toast弹出式提示
- * @param instance toast创建时所生成的实例对象
+ * Close a toast pop-up
+ * @param instance An instance object generated when toast is created
  */
 export function closeToast(instance: ZeptoCollection): void;

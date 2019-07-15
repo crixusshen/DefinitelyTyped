@@ -1,7 +1,7 @@
 /**
- * 开启表单验证
- * @param selector Form 表单元素对应的选择器，支持类和ID选择器
- * @param options 具体请查看validate参数配置:http://itest.dfzq.com.cn/document/fastman-v2/component/formvalidate.html
+ * Enable form validation
+ * @param selector Selectors for Form Form elements, support for class and ID selectors
+ * @param options Please check the validate parameter configuration for details:http://itest.dfzq.com.cn/document/fastman-v2/component/formvalidate.html
  */
 export function validate(selector: string, options: {
   onKeyup?: boolean,
@@ -20,8 +20,8 @@ export function validate(selector: string, options: {
 });
 
 /**
- * 该方法用来拓展一些输入域的验证,可实现一些复合关系非常复杂的验证规则
- * @param validateRule 具体请查看validateExtend参数配置:http://itest.dfzq.com.cn/document/fastman-v2/component/formvalidate.html
+ * This method is used to extend the validation of some input fields and can implement some validation rules with complex complex relations
+ * @param validateRule See the validateExtend parameter configuration for details:http://itest.dfzq.com.cn/document/fastman-v2/component/formvalidate.html
  */
 export function validateExtend(validateRule: {
   [key: string]: {

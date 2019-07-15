@@ -1,6 +1,6 @@
 /**
- * 创建一个空白页组件
- * @param options 具体请查看blankPage-config参数配置:http://itest.dfzq.com.cn/document/fastman-v2/component/blankpage.html
+ * Create a blank page component
+ * @param options Check out the blankpage-config parameter configuration for details:http://itest.dfzq.com.cn/document/fastman-v2/component/blankpage.html
  */
 export function blankPage(options: {
   title?: string;
@@ -14,9 +14,6 @@ export function blankPage(options: {
   iconScale?: number;
 }): blankPage.blankPageReturnType;
 
-/**
- * 定义passGuard实例函数
- */
 export namespace blankPage {
   interface blankPageReturnType {
     on(eventName: string, callback: (_) => void);

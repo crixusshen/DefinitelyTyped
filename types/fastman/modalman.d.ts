@@ -1,21 +1,21 @@
 /// <reference types="zepto" />
 
 /**
- * 打开模态窗口
+ * Open the modal window
  *
- * @param dom 一个zepto对象
+ * @param dom A zepto object
  */
 export function openModal(dom: ZeptoCollection): void;
 
 /**
- * 关闭模态窗口
+ * Close the modal window
  *
- * @param dom 一个zepto对象
+ * @param dom A zepto object
  */
 export function closeModal(dom: ZeptoCollection): void;
 
 /**
- * 模块默认配置属性，可通过该配置获取到模态的容器节点
+ * The module defaults to configuration properties, through which the container node to the modal can be obtained
  */
 export const defaults: {
   modalStack: boolean,

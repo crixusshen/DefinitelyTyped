@@ -1,8 +1,8 @@
 export default passGuard;
 
 /**
- * 创建一个密码控件组件
- * @param options 具体请查看passGuard参数配置:http://itest.dfzq.com.cn/document/fastman-v2/component/passguard.html
+ * Create a password control component
+ * @param options See the passGuard parameter configuration for details:http://itest.dfzq.com.cn/document/fastman-v2/component/passguard.html
  */
 declare function passGuard(options: {
   id?: string,
@@ -18,22 +18,22 @@ declare function passGuard(options: {
 }): passGuard.passGuardReturnType;
 
 /**
- * 定义passGuard实例函数
+ * Define the passGuard instance function
  */
 declare namespace passGuard {
   interface passGuardReturnType {
     /**
-     * 输出密码输入项内容
+     * Output the password entry
      */
     getOutput();
 
     /**
-     * 获取密码长度
+     * Get password length
      */
     getLength();
 
     /**
-     * 清除密码
+     * Clear the password
      */
     clearPass();
   }

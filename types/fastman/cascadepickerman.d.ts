@@ -1,7 +1,7 @@
 /**
- * 打开一个级联选择器
- * @param selector 触发控件的选择器,支持类和ID选择器
- * @param options 具体options参数请查看http://itest.dfzq.com.cn/document/fastman-v2/component/picker.html
+ * Open a cascade selector
+ * @param selector Trigger control selectors, support for class and ID selectors
+ * @param options See options parameters for details:http://itest.dfzq.com.cn/document/fastman-v2/component/picker.html
  */
 export default function cascadePicker(selector: string, options: {
   data: dataType[];

@@ -1,9 +1,9 @@
 /**
- * 打开一个loading加载指示器
+ * Open a loading indicator
  */
 export function showLoading(): void;
 
 /**
- * 关闭一个loading加载指示器
+ * Close a loading indicator
  */
 export function hideLoading(): void;

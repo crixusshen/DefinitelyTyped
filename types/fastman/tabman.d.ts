@@ -1,14 +1,14 @@
 /**
- * 定义某个tab事件
+ * Define a TAB event
  *
- * @param tabId 选项卡对应的ID属性
- * @param func 点击选项卡时触发的回调函数
+ * @param tabId The ID attribute corresponding to the TAB
+ * @param func The callback function that is triggered when the TAB is clicked
  */
 export function tabEvent(tabId: string, func: (_) => void): void;
 
 /**
- * 切换tab
+ * Switch the TAB
  *
- * @param tabId 选项卡对应的ID属性
+ * @param tabId The ID attribute corresponding to the TAB
  */
 export function tabSwitch(tabId: string): void;
